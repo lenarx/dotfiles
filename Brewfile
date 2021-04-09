@@ -24,13 +24,6 @@ brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 
-# Spatie Medialibrary
-brew 'jpegoptim'
-brew 'optipng'
-brew 'pngquant'
-brew 'svgo'
-brew 'gifsicle'
-
 # Development
 brew 'shivammathur/php/php@8.0'
 brew 'shivammathur/php/php@7.4'
@@ -42,6 +35,7 @@ brew 'memcached'
 brew 'node'
 brew 'yarn'
 brew 'deployer'
+brew 'wget'
 
 # Apps
 cask 'aerial'
