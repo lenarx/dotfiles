@@ -15,7 +15,7 @@ brew tap homebrew/bundle
 brew bundle
 
 # Install PHP extensions with PECL
-pecl install memcached redis
+pecl install redis
 
 # Install ZSH plugins
 source zsh-plugins.sh
