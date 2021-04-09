@@ -2,6 +2,7 @@
 
 echo "Setting up your Mac..."
 
+# Install Xcode Developer Tools
 xcode-select --install
 
 # Check for Homebrew and install if we don't have it
