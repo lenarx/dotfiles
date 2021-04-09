@@ -25,7 +25,7 @@ pecl install memcached redis
 mkdir $HOME/Code
 
 # Clone Github repositories
-./clone.sh
+./repositories.sh
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
