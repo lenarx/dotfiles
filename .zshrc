@@ -34,4 +34,4 @@ source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source $ZSH_PLUGINS/history.zsh
 
-source /Users/lenar/.zsh/key-bindings.zsh
+source $ZSH_PLUGINS/key-bindings.zsh
