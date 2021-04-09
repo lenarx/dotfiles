@@ -8,6 +8,6 @@ git clone git@github.com:zsh-users/zsh-autosuggestions.git $ZSH_PLUGINS/zsh-auto
 
 wget -O $ZSH_PLUGINS/completion.zsh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/completion.zsh
 
-wget -O $ZSH_PLUGINS/.zsh-plugins/history.zsh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/history.zsh
+wget -O $ZSH_PLUGINS/history.zsh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/history.zsh
 
-wget -O $ZSH_PLUGINS/.zsh-plugins/key-bindings.zsh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/key-bindings.zsh
+wget -O $ZSH_PLUGINS/key-bindings.zsh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/lib/key-bindings.zsh
