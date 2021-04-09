@@ -20,8 +20,6 @@ brew 'hub'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-brew 'stripe/stripe-cli/stripe'
-brew 'svn'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
@@ -43,6 +41,7 @@ brew 'meilisearch'
 brew 'memcached'
 brew 'node'
 brew 'yarn'
+brew 'deployer'
 
 # Apps
 cask 'aerial'
@@ -71,7 +70,6 @@ cask 'teamviewer'
 cask 'paragon-ntfs'
 cask 'graphql-playground'
 cask 'pycharm'
-cask 'deployer'
 
 # Quicklook
 cask 'qlmarkdown'
@@ -92,7 +90,7 @@ cask 'font-source-serif-pro'
 mas 'Affinity Photo', id: 824183456
 mas 'Keynote', id: 409183694
 mas 'Elmedia Video Player', id: 1044549675
-mas 'Giphy Capture', id: 668208984
+mas 'GIPHY Capture. The GIF Maker', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Slack', id: 803453959
 mas 'Pages', id: 409201541
