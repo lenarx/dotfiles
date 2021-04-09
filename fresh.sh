@@ -17,6 +17,9 @@ brew bundle
 # Install PHP extensions with PECL
 pecl install memcached redis
 
+# Install ZSH plugins
+source zsh-plugins.sh
+
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
 
