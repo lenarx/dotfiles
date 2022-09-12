@@ -4,12 +4,15 @@ echo "Setting up your Mac..."
 # Install Xcode Developer Tools
 xcode-select --install
 
+# Create a Sites directory
+mkdir $HOME/Code
+
 # Check for Homebrew and install if we don't have it
 [ ! -f "`which brew`" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/Code/dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
@@ -29,7 +32,3 @@ $HOME/.composer/vendor/bin/valet install
 
 # Install Global Ray
 $HOME/.composer/vendor/bin/global-ray install
-
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Code
