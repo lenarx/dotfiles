@@ -34,6 +34,7 @@ brew 'yarn'
 brew 'deployer'
 brew 'wget'
 
+
 # Apps
 cask '1password'
 cask 'affinity-photo'
