@@ -37,8 +37,12 @@ code() {
     fi
 }
 
+commit() {
+  eval "git add . && git commit -m \"$@\""
+}
+
 # git
-alias gc='git commit -m'
+# alias gc='git commit -m'
 alias push='git push origin $(git branch --show-current)'
 alias pull='git pull origin $(git branch --show-current)'
 alias gaa='git add .'
