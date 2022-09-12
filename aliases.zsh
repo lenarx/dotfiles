@@ -37,10 +37,6 @@ code() {
     fi
 }
 
-function mysqls() {
-  command mysql --socket /tmp/mysql_$1.sock -uroot
-}
-
 # git
 alias gc='git commit -m'
 alias push='git push origin $(git branch --show-current)'
