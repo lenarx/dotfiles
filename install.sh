@@ -4,7 +4,7 @@ echo "Setting up your Mac..."
 sudo -v
 
 # Install Xcode Developer Tools
-# xcode-select --install
+xcode-select --install
 
 # Create a Sites directory
 mkdir $HOME/Code
