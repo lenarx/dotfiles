@@ -2,33 +2,33 @@
 echo "Setting up your Mac..."
 
 # Install Xcode Developer Tools
-xcode-select --install
+# xcode-select --install
 
 # Create a Sites directory
-mkdir $HOME/Code
+# mkdir $HOME/Code
 
 # Check for Homebrew and install if we don't have it
-[ ! -f "`which brew`" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# [ ! -f "`which brew`" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s $HOME/Code/dotfiles/.zshrc $HOME/.zshrc
+# rm -rf $HOME/.zshrc
+# ln -s $HOME/Code/dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
-brew update
+# brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle
+# brew tap homebrew/bundle
+# brew bundle
 
 # Install PHP extensions with PECL
-pecl install imagick redis swoole
+# pecl install imagick redis swoole
 
 # Install global Composer packages
-/usr/local/bin/composer global require beyondcode/expose laravel/installer laravel/valet spatie/global-ray spatie/visit
+# /usr/local/bin/composer global require beyondcode/expose laravel/installer laravel/valet spatie/global-ray spatie/visit
 
 # Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
+# $HOME/.composer/vendor/bin/valet install
 
 # Install Global Ray
-$HOME/.composer/vendor/bin/global-ray install
+# $HOME/.composer/vendor/bin/global-ray install
