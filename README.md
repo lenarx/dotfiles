@@ -3,5 +3,5 @@
 ## Installation
 
 ```bash
-curl -s "https://github.com/lenarx/dotfiles/blob/main/install.sh" | bash
+curl -s "https://raw.githubusercontent.com/lenarx/dotfiles/main/install.sh" | bash
 ```
