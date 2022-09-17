@@ -1,6 +1,8 @@
 #!/bin/sh
 echo "Setting up your Mac..."
 
+sudo -v
+
 # Install Xcode Developer Tools
 # xcode-select --install
 
