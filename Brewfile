@@ -74,7 +74,6 @@ cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'warp'
-cask 'whatsapp'
 cask 'zoom'
 
 # Quicklook
