@@ -17,14 +17,14 @@ git clone https://github.com/lenarx/dotfiles.git ~/Code/.dotfiles
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/Code/dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/Code/.dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle --file=~/Code/dotfiles/Brewfile
+brew bundle --file=~/Code/.dotfiles/Brewfile
 
 # Install PHP extensions with PECL
 pecl install imagick redis swoole
