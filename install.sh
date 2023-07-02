@@ -10,7 +10,7 @@ xcode-select --install
 mkdir $HOME/Code
 
 # Clone repository files
-git clone https://github.com/lenarx/dotfiles.git ~/Code/dotfiles
+git clone https://github.com/lenarx/dotfiles.git ~/Code/.dotfiles
 
 # Check for Homebrew and install if we don't have it
 [ ! -f "`which brew`" ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
