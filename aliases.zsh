@@ -6,6 +6,7 @@ alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-dire
 alias c="clear"
 alias ls='ls -G'
 alias ..='cd ..'
+alias pstorm='open -na "PhpStorm.app" --args "$@"'
 
 # Directories
 alias dotfiles="cd $DOTFILES"
@@ -19,7 +20,6 @@ alias seed="php artisan db:seed"
 alias a='php artisan'
 alias art='php artisan'
 alias mfs='php artisan migrate:fresh --seed'
-alias serve='php artisan serve'
 alias d='docker-compose --project-directory ./laradock  --file=./laradock/docker-compose.yml exec workspace bash'
 alias da='docker-compose --project-directory ./laradock  --file=./laradock/docker-compose.yml exec workspace php artisan'
 alias sail='bash vendor/bin/sail'
@@ -28,7 +28,7 @@ alias sail='bash vendor/bin/sail'
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias php74="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:7.4"
 alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:8.0"
-alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
 
 code() {
     cd ~/Code
@@ -42,7 +42,7 @@ commit() {
 }
 
 # git
-# alias gc='git commit -m'
+alias gc='git commit -m'
 alias push='git push origin $(git branch --show-current)'
 alias pull='git pull origin $(git branch --show-current)'
 alias gaa='git add .'
@@ -51,3 +51,6 @@ alias gs='git status'
 alias co='git checkout'
 alias nah='git reset --hard && git clean -df'
 alias fetch='git fetch origin'
+
+# Docker
+alias  docker-reset='docker-compose down --rmi all --volumes --remove-orphans &&  docker system prune -a --volumes -f'
