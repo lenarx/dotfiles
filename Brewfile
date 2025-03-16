@@ -17,6 +17,7 @@ brew 'httpie'
 brew 'mas'
 brew 'pkg-config'
 brew 'tree'
+brew 'mackup'
 brew 'rsync'
 brew 'zlib'
 
